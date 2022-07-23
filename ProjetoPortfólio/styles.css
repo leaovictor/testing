@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'globotipo_textoblack';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-black-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textobold';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-bold-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textoregular';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-regular-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textolight';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-light-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'globotipo_textoregular', sans-serif; 
+    background-color: #f2f1f2;
+    
+
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    background-color: #353c6b;
+    flex-direction: row;
+    color: #f2f1f2;
+    padding-bottom: 10px;
+    
+}
+
+h1, .title {
+    display: flex;
+    background: #353c6b;
+    color: #f2f1f2;
+
+}
+
+a, .menu {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    background: #353c6b;
+    color: #f2f1f2;
+    text-decoration: none;
+
+
+}
+

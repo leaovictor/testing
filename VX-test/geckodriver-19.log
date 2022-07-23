@@ -1,0 +1,13 @@
+1658155140482	geckodriver	INFO	Listening on 127.0.0.1:51258
+1658155143555	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51259" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileav46HR"
+1658155143801	Marionette	INFO	Marionette enabled
+1658155143805	Marionette	INFO	Listening on port 51270
+WebDriver BiDi listening on ws://localhost:51259
+Read port: 51270
+1658155143935	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileav46HR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51259/devtools/browser/07eaa26e-32a0-4fe5-8e6e-a075c8259acf
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pt_br.js, line 352: uncaught exception: CustomError: Error in protected function: Invalid JSON string: 
+1658155316813	Marionette	INFO	Stopped listening on port 51270

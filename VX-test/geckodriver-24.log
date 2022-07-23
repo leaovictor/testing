@@ -1,0 +1,13 @@
+1658156669210	geckodriver	INFO	Listening on 127.0.0.1:49295
+1658156672280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49296" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilepVNTyu"
+1658156672514	Marionette	INFO	Marionette enabled
+1658156672517	Marionette	INFO	Listening on port 49305
+WebDriver BiDi listening on ws://localhost:49296
+Read port: 49305
+1658156672713	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilepVNTyu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49296/devtools/browser/88a2e546-864a-43f4-bf7e-28cee497f922
+1658156794349	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1658156844538	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: CustomError: Error in protected function: Invalid JSON string: 
+1658156859409	Marionette	INFO	Stopped listening on port 49305

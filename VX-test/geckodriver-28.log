@@ -1,0 +1,13 @@
+1658228134427	geckodriver	INFO	Listening on 127.0.0.1:57714
+1658228137485	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57715" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilejPArB0"
+1658228137771	Marionette	INFO	Marionette enabled
+1658228137775	Marionette	INFO	Listening on port 57733
+WebDriver BiDi listening on ws://localhost:57715
+Read port: 57733
+1658228137908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilejPArB0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57715/devtools/browser/616808a4-9ec8-4356-a301-76d96a405844
+JavaScript error: , line 0: uncaught exception: CustomError: Error in protected function: Invalid JSON string: 
+JavaScript error: , line 0: uncaught exception: CustomError: Error in protected function: Invalid JSON string: 
+1658228250855	Marionette	INFO	Stopped listening on port 57733
+[Parent 11156, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723

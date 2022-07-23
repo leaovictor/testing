@@ -1,0 +1,14 @@
+1658229839829	geckodriver	INFO	Listening on 127.0.0.1:62812
+1658229842874	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62813" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileTjvutl"
+1658229843244	Marionette	INFO	Marionette enabled
+1658229843249	Marionette	INFO	Listening on port 62832
+WebDriver BiDi listening on ws://localhost:62813
+Read port: 62832
+1658229843444	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileTjvutl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62813/devtools/browser/727e3577-146d-4e5d-8dfb-3c6b04149a73
+1658229919464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1658230177770	Marionette	INFO	Stopped listening on port 62832
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2111,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2111","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1023"]}] Barrier: quit-application-granted
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 2123: TypeError: subject.QueryInterface is not a function
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down

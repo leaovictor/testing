@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220715 10:36:10.428" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220719 08:23:59.516" rpa="false" schemaversion="3">
 <suite id="s1" name="VX" source="C:\Users\leaov\OneDrive\Documents\Portfolio\testing\VX-test\VX.robot">
 <test id="s1-t1" name="Validação das informações em &quot;Quem Somos&quot;" line="8">
 <kw name="Abrir o site da VX Comunicação" library="VX" type="SETUP">
@@ -7,166 +7,467 @@
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220715 10:36:10.591" level="INFO">Opening browser 'Firefox' to base url 'https://www.vxcomunicacao.com.br'.</msg>
-<msg timestamp="20220715 10:36:10.592" level="INFO">Firefox driver log is always forced to to: C:\Users\leaov\OneDrive\Documents\Portfolio\testing\VX-test\geckodriver-27.log</msg>
-<status status="PASS" starttime="20220715 10:36:10.590" endtime="20220715 10:36:27.749"/>
+<msg timestamp="20220719 08:23:59.745" level="INFO">Opening browser 'Firefox' to base url 'https://www.vxcomunicacao.com.br'.</msg>
+<msg timestamp="20220719 08:23:59.747" level="INFO">Firefox driver log is always forced to to: C:\Users\leaov\OneDrive\Documents\Portfolio\testing\VX-test\geckodriver-34.log</msg>
+<status status="PASS" starttime="20220719 08:23:59.745" endtime="20220719 08:24:57.586"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220715 10:36:27.749" endtime="20220715 10:36:28.011"/>
+<status status="PASS" starttime="20220719 08:24:57.587" endtime="20220719 08:24:57.849"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:10.590" endtime="20220715 10:36:28.012"/>
+<status status="PASS" starttime="20220719 08:23:59.745" endtime="20220719 08:24:57.849"/>
 </kw>
 <kw name="Clicar em &quot;Aceitar Cookies&quot;" library="VX">
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:33.021" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:28.015" endtime="20220715 10:36:33.021"/>
+<msg timestamp="20220719 08:25:02.855" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220719 08:24:57.854" endtime="20220719 08:25:02.855"/>
 </kw>
 <kw name="Wait and Click" library="VX">
 <arg>${BTN_PROSSEGUIR}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220715 10:36:33.022" endtime="20220715 10:36:33.048"/>
+<status status="PASS" starttime="20220719 08:25:02.856" endtime="20220719 08:25:02.887"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220715 10:36:33.049" level="INFO">Clicking element 'css=.catapultCookie'.</msg>
-<status status="PASS" starttime="20220715 10:36:33.048" endtime="20220715 10:36:33.270"/>
+<msg timestamp="20220719 08:25:02.888" level="INFO">Clicking element 'css=.catapultCookie'.</msg>
+<status status="PASS" starttime="20220719 08:25:02.887" endtime="20220719 08:25:03.115"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:33.022" endtime="20220715 10:36:33.271"/>
+<status status="PASS" starttime="20220719 08:25:02.855" endtime="20220719 08:25:03.115"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:28.014" endtime="20220715 10:36:33.271"/>
+<status status="PASS" starttime="20220719 08:24:57.850" endtime="20220719 08:25:03.116"/>
 </kw>
 <kw name="Ir para página &quot;Quem somos&quot;" library="VX">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:35.277" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:33.273" endtime="20220715 10:36:35.277"/>
+<msg timestamp="20220719 08:25:05.128" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:03.118" endtime="20220719 08:25:05.128"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TEXT_QUEMSOMOS}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220719 08:25:05.146" level="INFO">Current page contains text 'Quem Somos'.</msg>
+<status status="PASS" starttime="20220719 08:25:05.129" endtime="20220719 08:25:05.146"/>
 </kw>
 <kw name="Wait and Click" library="VX">
 <arg>${BTN_QUEMSOMOS}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220715 10:36:35.278" endtime="20220715 10:36:35.299"/>
+<status status="PASS" starttime="20220719 08:25:05.147" endtime="20220719 08:25:05.162"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220715 10:36:35.300" level="INFO">Clicking element 'css=#menu-item-24 &gt; a:nth-child(1)'.</msg>
-<status status="PASS" starttime="20220715 10:36:35.299" endtime="20220715 10:36:36.893"/>
+<msg timestamp="20220719 08:25:05.162" level="INFO">Clicking element 'css=#menu-item-24 &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220719 08:25:05.162" endtime="20220719 08:25:11.350"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:35.277" endtime="20220715 10:36:36.894"/>
+<status status="PASS" starttime="20220719 08:25:05.146" endtime="20220719 08:25:11.350"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:33.272" endtime="20220715 10:36:36.894"/>
+<status status="PASS" starttime="20220719 08:25:03.116" endtime="20220719 08:25:11.350"/>
 </kw>
-<kw name="Ir para a pagina &quot;Criação de Sites&quot;" library="VX">
+<kw name="Verificar os Canais Online" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:14.361" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:11.352" endtime="20220719 08:25:14.361"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:14.362" level="INFO">Executing JavaScript:
+window.scroll(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:14.361" endtime="20220719 08:25:14.369"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TEXT_ONLINE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220719 08:25:14.380" level="INFO">Current page contains text 'canais online'.</msg>
+<status status="PASS" starttime="20220719 08:25:14.369" endtime="20220719 08:25:14.380"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:11.351" endtime="20220719 08:25:14.380"/>
+</kw>
+<kw name="Acessar o Link &quot;Criação de Sites&quot;" library="VX">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:38.897" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:36.895" endtime="20220715 10:36:38.897"/>
+<msg timestamp="20220719 08:25:16.396" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:14.382" endtime="20220719 08:25:16.396"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220715 10:36:38.898" level="INFO">Executing JavaScript:
+<msg timestamp="20220719 08:25:16.398" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220715 10:36:38.897" endtime="20220715 10:36:38.906"/>
+<status status="PASS" starttime="20220719 08:25:16.396" endtime="20220719 08:25:16.405"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:40.918" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:38.906" endtime="20220715 10:36:40.918"/>
+<msg timestamp="20220719 08:25:18.408" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:16.405" endtime="20220719 08:25:18.408"/>
 </kw>
 <kw name="Wait and Click" library="VX">
-<arg>${LINK_SITECREATE}</arg>
+<arg>${LINK_CREATE}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220715 10:36:40.919" endtime="20220715 10:36:40.941"/>
+<status status="PASS" starttime="20220719 08:25:18.409" endtime="20220719 08:25:18.435"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220715 10:36:40.941" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[1]/a/div/div/p/span'.</msg>
-<status status="PASS" starttime="20220715 10:36:40.941" endtime="20220715 10:36:41.879"/>
+<msg timestamp="20220719 08:25:18.437" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[1]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:18.436" endtime="20220719 08:25:19.436"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:40.918" endtime="20220715 10:36:41.879"/>
+<status status="PASS" starttime="20220719 08:25:18.408" endtime="20220719 08:25:19.436"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220715 10:36:41.879" endtime="20220715 10:36:42.331"/>
+<status status="PASS" starttime="20220719 08:25:19.436" endtime="20220719 08:25:19.953"/>
 </kw>
-<status status="PASS" starttime="20220715 10:36:36.895" endtime="20220715 10:36:42.331"/>
+<status status="PASS" starttime="20220719 08:25:14.381" endtime="20220719 08:25:19.953"/>
 </kw>
-<kw name="Ir para a pagina &quot;Apps e Games&quot;" library="VX">
+<kw name="Acessar o Link &quot;Apps e Games&quot;" library="VX">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:44.347" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:42.332" endtime="20220715 10:36:44.347"/>
+<msg timestamp="20220719 08:25:21.963" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:19.955" endtime="20220719 08:25:21.963"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:21.965" level="INFO">Executing JavaScript:
+window.scroll(0,300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:21.963" endtime="20220719 08:25:21.973"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:23.979" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:21.973" endtime="20220719 08:25:23.979"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_APPGAMES}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:25:23.981" endtime="20220719 08:25:24.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:25:24.005" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[2]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:24.005" endtime="20220719 08:25:27.482"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:23.979" endtime="20220719 08:25:27.482"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:25:27.482" endtime="20220719 08:25:27.909"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:19.954" endtime="20220719 08:25:27.909"/>
+</kw>
+<kw name="Acessar o Link &quot;Social Media&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:29.918" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:27.910" endtime="20220719 08:25:29.918"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:29.920" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:29.918" endtime="20220719 08:25:29.928"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:31.934" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:29.928" endtime="20220719 08:25:31.934"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_SOCIALMEDIA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:25:31.936" endtime="20220719 08:25:31.959"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:25:31.959" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[3]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:31.959" endtime="20220719 08:25:35.056"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:31.935" endtime="20220719 08:25:35.057"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:25:35.058" endtime="20220719 08:25:35.461"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:27.910" endtime="20220719 08:25:35.462"/>
+</kw>
+<kw name="Acessar o Link &quot;Intranet e Sistemas&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:37.470" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:35.463" endtime="20220719 08:25:37.470"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:37.472" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:37.471" endtime="20220719 08:25:37.480"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:39.490" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:37.480" endtime="20220719 08:25:39.490"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_INTRANETESISTEMAS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:25:39.491" endtime="20220719 08:25:39.506"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:25:39.508" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[4]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:39.508" endtime="20220719 08:25:44.690"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:39.490" endtime="20220719 08:25:44.690"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:25:44.690" endtime="20220719 08:25:45.121"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:35.462" endtime="20220719 08:25:45.121"/>
+</kw>
+<kw name="Acessar o Link &quot;Inbound Marketing&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:47.133" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:45.122" endtime="20220719 08:25:47.133"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:47.133" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:47.133" endtime="20220719 08:25:47.138"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:49.142" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:47.138" endtime="20220719 08:25:49.142"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_INBOUNDMARKETING}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:25:49.143" endtime="20220719 08:25:49.169"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:25:49.169" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[5]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:49.169" endtime="20220719 08:25:51.940"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:49.142" endtime="20220719 08:25:51.941"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:25:51.941" endtime="20220719 08:25:52.426"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:45.122" endtime="20220719 08:25:52.427"/>
+</kw>
+<kw name="Acessar o Link &quot;Marketing Promocional&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:54.431" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:52.427" endtime="20220719 08:25:54.431"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:25:54.433" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:25:54.431" endtime="20220719 08:25:54.441"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:25:56.456" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:25:54.441" endtime="20220719 08:25:56.456"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_MARKETINGPROMOCIONAL}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:25:56.457" endtime="20220719 08:25:56.481"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:25:56.481" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[6]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:25:56.481" endtime="20220719 08:26:01.949"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:56.456" endtime="20220719 08:26:01.949"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:26:01.949" endtime="20220719 08:26:02.285"/>
+</kw>
+<status status="PASS" starttime="20220719 08:25:52.427" endtime="20220719 08:26:02.285"/>
+</kw>
+<kw name="Acessar o Link &quot;Planejamento de Mídia Online&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:04.298" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:02.286" endtime="20220719 08:26:04.298"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:26:04.299" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:26:04.298" endtime="20220719 08:26:04.307"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:06.322" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:04.307" endtime="20220719 08:26:06.322"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_PLANEJAMENTODEMIDIA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:26:06.323" endtime="20220719 08:26:06.343"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:26:06.343" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[7]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:26:06.343" endtime="20220719 08:26:11.012"/>
+</kw>
+<status status="PASS" starttime="20220719 08:26:06.322" endtime="20220719 08:26:11.012"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:26:11.013" endtime="20220719 08:26:11.421"/>
+</kw>
+<status status="PASS" starttime="20220719 08:26:02.286" endtime="20220719 08:26:11.422"/>
+</kw>
+<kw name="Acessar o Link &quot;Planejamento de Marketing Digital&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:13.431" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:11.423" endtime="20220719 08:26:13.431"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:26:13.432" level="INFO">Executing JavaScript:
+window.scroll(0,800)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:26:13.431" endtime="20220719 08:26:13.440"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:15.451" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:13.440" endtime="20220719 08:26:15.451"/>
+</kw>
+<kw name="Wait and Click" library="VX">
+<arg>${LINK_PLANEJAMENTODEMKTDIGITAL}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220719 08:26:15.452" endtime="20220719 08:26:15.474"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220719 08:26:15.476" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[8]/a/div/div/p/span'.</msg>
+<status status="PASS" starttime="20220719 08:26:15.475" endtime="20220719 08:26:17.085"/>
+</kw>
+<status status="PASS" starttime="20220719 08:26:15.451" endtime="20220719 08:26:17.085"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220719 08:26:17.085" endtime="20220719 08:26:18.049"/>
+</kw>
+<status status="PASS" starttime="20220719 08:26:11.423" endtime="20220719 08:26:18.049"/>
+</kw>
+<kw name="Verificar os Canais Offline" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:21.054" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:18.051" endtime="20220719 08:26:21.054"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220715 10:36:44.348" level="INFO">Executing JavaScript:
+<msg timestamp="20220719 08:26:21.055" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220715 10:36:44.347" endtime="20220715 10:36:44.356"/>
+<status status="PASS" starttime="20220719 08:26:21.054" endtime="20220719 08:26:21.062"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TEXT_OFFLINE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220719 08:26:21.074" level="INFO">Current page contains text 'mídias offline'.</msg>
+<status status="PASS" starttime="20220719 08:26:21.062" endtime="20220719 08:26:21.074"/>
+</kw>
+<status status="PASS" starttime="20220719 08:26:18.051" endtime="20220719 08:26:21.075"/>
+</kw>
+<kw name="Acessar o Link &quot;Criação de Marca&quot;" library="VX">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220719 08:26:23.089" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220719 08:26:21.077" endtime="20220719 08:26:23.089"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220719 08:26:23.090" level="INFO">Executing JavaScript:
+window.scroll(0,900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220719 08:26:23.089" endtime="20220719 08:26:23.096"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220715 10:36:46.371" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220715 10:36:44.356" endtime="20220715 10:36:46.371"/>
-</kw>
-<kw name="Wait and Click" library="VX">
-<arg>${LINK_SITEAPPGAMES}</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${ELEMENTO}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220715 10:36:46.372" endtime="20220715 10:36:46.396"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${ELEMENTO}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220715 10:36:46.397" level="INFO">Clicking element 'xpath=/html/body/div[1]/main/section[4]/div/div/div[2]/a/div/div/p/span'.</msg>
-<status status="PASS" starttime="20220715 10:36:46.396" endtime="20220715 10:36:47.378"/>
-</kw>
-<status status="PASS" starttime="20220715 10:36:46.371" endtime="20220715 10:36:47.379"/>
-</kw>
-<kw name="Go Back" library="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220715 10:36:47.379" endtime="20220715 10:36:47.796"/>
-</kw>
-<status status="PASS" starttime="20220715 10:36:42.332" endtime="20220715 10:36:47.797"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220715 10:36:47.797" endtime="20220715 10:36:48.508"/>
-</kw>
-<status status="PASS" starttime="20220715 10:36:10.589" endtime="20220715 10:36:48.508"/>
-</test>
-<status status="PASS" starttime="20220715 10:36:10.430" endtime="20220715 10:36:48.510"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="VX">VX</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
