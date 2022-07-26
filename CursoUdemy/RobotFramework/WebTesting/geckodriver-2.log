@@ -1,11 +1,11 @@
-1658542218581	geckodriver	INFO	Listening on 127.0.0.1:49720
-1658542221644	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofile8HzoPr"
-1658542221901	Marionette	INFO	Marionette enabled
-1658542221905	Marionette	INFO	Listening on port 49730
-WebDriver BiDi listening on ws://localhost:49721
-Read port: 49730
-1658542222032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofile8HzoPr\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:49721/devtools/browser/0c8220da-739e-482b-84b2-e1c123182087
+1658877051264	geckodriver	INFO	Listening on 127.0.0.1:50698
+1658877054325	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50699" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileV58MHA"
+1658877054594	Marionette	INFO	Marionette enabled
+1658877054599	Marionette	INFO	Listening on port 50708
+WebDriver BiDi listening on ws://localhost:50699
+Read port: 50708
+1658877054741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofileV58MHA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50699/devtools/browser/03dc09f5-c806-459d-9b67-d0393d7515f8
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.amazon.com.br"
-1658542228369	Marionette	INFO	Stopped listening on port 49730
+1658877060063	Marionette	INFO	Stopped listening on port 50708

@@ -1,0 +1,14 @@
+1658877079017	geckodriver	INFO	Listening on 127.0.0.1:50855
+1658877082075	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50856" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilezuSKF1"
+1658877082342	Marionette	INFO	Marionette enabled
+1658877082346	Marionette	INFO	Listening on port 50865
+WebDriver BiDi listening on ws://localhost:50856
+Read port: 50865
+1658877082487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leaov\\AppData\\Local\\Temp\\rust_mozprofilezuSKF1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50856/devtools/browser/5d9091a7-60cd-4a41-a684-9ae1605f623b
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.amazon.com.br"
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/61lemL2h6EL.js?AUIClients/AmazonUIjQuery&KK9dlo3A#412402-T1.412405-T1, line 54: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.amazon.com.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.amazon.com.br"
+1658877103419	Marionette	INFO	Stopped listening on port 50865
